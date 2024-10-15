@@ -1,0 +1,157 @@
+/* Estilos Gerais */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #fff0f5; /* Rosa claro */
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    background-color: #ff69b4; /* Rosa vibrante */
+}
+
+#cabecalho .nav .nav-link.active {
+    background-color: #fff;
+    color: #ff69b4;
+}
+
+#cabecalho .nav .nav-link {
+    color: #fff;
+}
+
+.navbar-brand {
+    font-family: 'Pacifico', cursive;
+    color: #fff;
+    font-size: 2rem;
+}
+
+.navbar-toggler {
+    background-color: #ffe4e1; /* Rosa suave */
+}
+
+.section-title {
+    font-family: 'Pacifico', cursive;
+    text-align: center;
+}
+
+.text-colored {
+    color: #ff69b4;
+}
+
+#sobre-a-doceria, 
+#nossos-doces, #eventos, 
+#fale-conosco {
+    background-color: #fff;
+    padding: 40px 0;
+}
+
+#nossos-doces .col-md-4 {
+    margin-bottom: 30px;
+}
+
+#fale-conosco button {
+    background-color: #ff69b4;
+    color: #fff;
+}
+
+#fale-conosco .form-label {
+    color: #ff69b4;
+}
+
+.social-link li {
+    list-style: none;
+    display: inline;
+    margin-right: 10px;
+}
+
+.social-link li a {
+    color: #ff69b4;
+    font-size: 1.5rem;
+    text-decoration: none;
+}
+
+/* Tamanho de Tela Padrão - Desktop */
+@media (min-width: 992px) {
+    .navbar-brand {
+        font-size: 2.5rem;
+    }
+
+    #sobre-a-doceria .col-md-5 img {
+        max-height: 450px;
+    }
+
+    #nossos-doces .col-md-4 img {
+        max-height: 350px;
+    }
+
+    #fale-conosco .col-md-5 {
+        margin-top: 50px;
+    }
+}
+
+/* Responsividade para Tablets */
+@media (min-width: 768px) and (max-width: 991px) {
+    .navbar-brand {
+        font-size: 2rem;
+    }
+
+    .carousel-item img {
+        height: 300px;
+        object-fit: cover;
+    }
+
+    #sobre-a-doceria .col-md-7 {
+        margin-top: 20px;
+    }
+
+    #nossos-doces .col-md-4 img {
+        height: 300px;
+    }
+
+    #fale-conosco .col-md-5 {
+        margin-top: 30px;
+    }
+}
+
+/* Responsividade para Mobile */
+@media (max-width: 767px) {
+    .navbar-brand {
+        font-size: 1.8rem;
+    }
+
+    .carousel-item img {
+        height: 250px;
+        object-fit: cover;
+    }
+
+    #sobre-a-doceria, #nossos-doces, #eventos, #fale-conosco {
+        padding: 20px 0;
+    }
+
+    #nossos-doces .col-md-4 {
+        margin-bottom: 20px;
+    }
+
+    #nossos-doces .col-md-4 img {
+        height: 200px;
+    }
+
+    #fale-conosco .col-md-5 {
+        margin-top: 20px;
+    }
+
+    #fale-conosco button {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .social-link li {
+        margin-right: 5px;
+    }
+
+    /* Ajustar o layout das colunas no formulário */
+    #fale-conosco .col-md-7, #fale-conosco .col-md-5 {
+        width: 100%;
+        margin-top: 20px;
+    }
+}
